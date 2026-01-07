@@ -66,4 +66,33 @@ Living-Museum/
 git clone https://github.com/tarun4567/Living-Museum.git
 cd Living-Museum
 
+---
+
+2️⃣ Create Virtual Environment
+python -m venv env
+env\Scripts\activate     # For Windows
+
+---
+
+3️⃣ Install Dependencies
+pip install django
+
+---
+
+3️⃣ Install Dependencies
+pip install django
+
+---
+
+4️⃣ Run Migrations
+python manage.py migrate
+
+---
+
+5️⃣ Start the Server
+python manage.py runserver
+
+
+
+
 
