@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home - Animal Awareness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* Reset and Base Styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #e3f2fd, #fbe9e7);
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    .topnav {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, #6a0572, #ab1f91);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      z-index: 999;
+      position: sticky;
+      top: 0;
+    }
+
+    .topnav a {
+      color: #f2f2f2;
+      padding: 16px 22px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .topnav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      border-bottom: 3px solid #04AA6D;
+    }
+
+    .topnav a.active {
+      background-color: #04AA6D;
+      color: white;
+      border-radius: 0 0 8px 8px;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 500px;
+      background-image: url('/media/back_home.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-text {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 50px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 2s ease-in-out;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 44px;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      line-height: 1.6;
+      color: #e0f7fa;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero-text {
+        padding: 20px;
+      }
+
+      .hero-text h1 {
+        font-size: 30px;
+      }
+
+      .hero-text p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="/extending/">Extending Animals</a>
+    <a href="/extinct/">Extinct Animals</a>
+    <a href="/donation/">Donate</a>
+    <a href="/feed/">Feedback</a>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Animal Awareness</h1>
+      <p>Discover endangered and extinct species in India and learn how you can help protect wildlife.</p>
+    </div>
+  </div>
+
+</body>
+</html>

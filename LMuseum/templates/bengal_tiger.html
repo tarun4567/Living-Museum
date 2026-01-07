@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bengal Tiger</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdf6f0;
+      color: #2f1b0c;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #cc5500;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .navbar h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      color: #ffdd99;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #faae2b, #f75c03);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      font-style: italic;
+    }
+
+    /* Scrolling Banner */
+    .scrolling-text-container {
+      background-color: #2f1b0c;
+      overflow: hidden;
+      padding: 10px;
+    }
+
+    .scrolling-text {
+      color: #ffce54;
+      white-space: nowrap;
+      animation: scroll 12s linear infinite;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Main content */
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section h2 {
+      color: #cc5500;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 480px;
+      border-radius: 12px;
+      border: none;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .custom-link {
+      display: inline-block;
+      background-color: #f75c03;
+      color: white;
+      text-decoration: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .custom-link:hover {
+      background-color: #cc4400;
+    }
+
+    footer {
+      background-color: #cc5500;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <div class="navbar">
+    <h2>Bengal Tiger</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#appearance">Appearance</a>
+      <a href="#threats">Threats</a>
+      <a href="https://en.wikipedia.org/wiki/Bengal_tiger" target="_blank">Wikipedia</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>The Bengal Tiger</h1>
+    <p>Symbol of Strength and Majesty in Indian Wildlife</p>
+  </div>
+
+  <!-- Scrolling Text -->
+  <div class="scrolling-text-container">
+    <div class="scrolling-text">🐅 The Bengal Tiger – Guardian of the Indian Forests 🐾</div>
+  </div>
+
+  <!-- Content Container -->
+  <div class="container">
+
+    <!-- 3D Model -->
+    <iframe title="Bengal Tiger" src="https://sketchfab.com/models/cf88c380722445ecad2eb13ed21c4a88/embed"></iframe>
+
+    <!-- About -->
+    <section id="about">
+      <h2>About the Bengal Tiger</h2>
+      <p>
+        The Bengal tiger is a subspecies of tiger native to the Indian subcontinent. It is the national animal of India and is one of the most iconic and majestic creatures in the wild. Found in forests, mangroves, and grasslands, these tigers are symbols of strength and power.
+      </p>
+    </section>
+
+    <!-- Appearance -->
+    <section id="appearance">
+      <h2>Physical Appearance</h2>
+      <p>
+        1. <b>Coat:</b> Bright orange with dark black stripes.<br>
+        2. <b>Stripes:</b> Unique to each tiger.<br>
+        3. <b>Size:</b> Ranges from 7 to 12 feet long.<br>
+        4. <b>Tail:</b> Long and ringed, used for balance.<br>
+        5. <b>Eyes & Ears:</b> Sharp senses with white ear markings.<br>
+        6. <b>Paws:</b> Retractable claws for stealth.<br>
+        7. <b>Weight:</b> Between 220 to 660 pounds.
+      </p>
+    </section>
+
+    <!-- Threats -->
+    <section id="threats">
+      <h2>Why Are They Endangered?</h2>
+      <p>
+        1. <b>Habitat Loss:</b> Due to deforestation and urban expansion.<br>
+        2. <b>Poaching:</b> Killed for skin, bones, and trade.<br>
+        3. <b>Conflict:</b> Killed in retaliation by locals.<br>
+        4. <b>Prey Loss:</b> Decline in deer and wild boars.<br>
+        5. <b>Climate Change:</b> Affects forest and mangrove ecosystems.
+      </p>
+    </section>
+
+    <!-- Learn More -->
+    <a href="https://en.wikipedia.org/wiki/Bengal_tiger" class="custom-link" target="_blank" onclick="handleClick()">Learn More on Wikipedia</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Bengal Tiger Conservation | All Rights Reserved
+  </footer>
+
+  <script>
+    function handleClick() {
+      alert("Redirecting to Wikipedia for more info about the Bengal Tiger.");
+    }
+  </script>
+
+</body>
+</html>

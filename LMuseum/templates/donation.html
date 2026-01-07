@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Support WWF</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e0f2f1;
+      color: #004d40;
+      text-align: center;
+      background-image: url('https://www.transparentpng.com/thumb/wildlife/hFDT3I-wildlife-clipart-transparent-image.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 80%;
+      background-attachment: fixed;
+      opacity: 0.98;
+    }
+
+    .overlay {
+      backdrop-filter: blur(1px);
+      background-color: rgba(224, 242, 241, 0.95);
+      min-height: 100vh;
+      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo {
+      width: 120px;
+      margin-bottom: 25px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      color: #00695c;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+      color: #004d40;
+    }
+
+    .wwf-button {
+      background-color: #00796b;
+      color: white;
+      padding: 14px 30px;
+      font-size: 17px;
+      text-decoration: none;
+      border-radius: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s, transform 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+    }
+
+    .wwf-button:hover {
+      background-color: #004d40;
+      transform: scale(1.05);
+    }
+
+    .wwf-button svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        background-size: 100%;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .wwf-button {
+        font-size: 15px;
+        padding: 12px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <h1>Protect Wildlife, Preserve the Planet</h1>
+    <p>
+      Join WWF in conserving wildlife, restoring habitats, and ensuring the survival of Earth’s most iconic species.
+    </p>
+    <a href="https://www.worldwildlife.org/" target="_blank" class="wwf-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M10 17l5-5-5-5v10z"/>
+        <path d="M0 24V0h24v24H0z" fill="none"/>
+      </svg>
+      Visit  to W W F
+    </a>
+  </div>
+</body>
+</html>

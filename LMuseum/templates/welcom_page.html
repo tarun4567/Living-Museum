@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to Living Museum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      font-family: 'Ubuntu', sans-serif;
+      background: url('/media/welcom_back.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1s ease-out;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 48px;
+      text-shadow: 2px 2px 8px #000;
+      margin-bottom: 30px;
+      animation: pulse 2s infinite;
+    }
+
+    button {
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      padding: 14px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.4s ease;
+      box-shadow: 0 5px 15px rgba(255, 65, 108, 0.4);
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #ff4b2b, #ff416c);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1><b>Welcome to Living Museum</b></h1>
+    <button id="mybutton">Go to Login Page</button>
+  </div>
+
+  <script>
+    // Redirect to login
+    document.getElementById("mybutton").onclick = function () {
+      location.href = "/login/";
+    };
+
+    // Voice Welcome
+    window.onload = function () {
+      const msg = new SpeechSynthesisUtterance("Welcome to Living Museum");
+      msg.pitch = 1;
+      msg.rate = 1;
+      msg.volume = 1;
+      speechSynthesis.speak(msg);
+    };
+  </script>
+</body>
+</html>

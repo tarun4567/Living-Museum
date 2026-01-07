@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Indian Auroch</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://example.com/your-background-image.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #2e055e;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #0bc15d, #067a4e);
+      padding: 60px 20px 40px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .scrolling-text-container {
+      overflow: hidden;
+      margin-bottom: 15px;
+    }
+
+    .scrolling-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 12s linear infinite;
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff89c;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-top: 10px;
+    }
+
+    .animals {
+      background: rgba(255, 255, 255, 0.9);
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .animals h2, .animals h3 {
+      margin: 25px 0 10px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .animals p {
+      margin-bottom: 20px;
+      color: #444;
+    }
+
+    .sketchfab-embed-wrapper {
+      margin: 40px auto;
+      max-width: 1000px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    .custom-link {
+      display: inline-block;
+      background-color: #0bc15d;
+      color: white;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .custom-link:hover {
+      background-color: #067a4e;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      background-color: #222;
+      color: #eee;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      iframe {
+        height: 320px;
+      }
+
+      .animals {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="scrolling-text-container">
+      <div class="scrolling-text">🦌 The Indian Auroch – The Lost Giant 🦌</div>
+    </div>
+    <h1>Indian Auroch</h1>
+    <p><strong>Extinct Animal of India</strong></p>
+  </div>
+
+  <div class="sketchfab-embed-wrapper">
+    <iframe title="Aurochs (Bos primigenius)" frameborder="0" allowfullscreen allow="autoplay; fullscreen; xr-spatial-tracking"
+      src="https://sketchfab.com/models/512eeec5c159451590f6a8dd35a70c0e/embed">
+    </iframe>
+  </div>
+
+  <div class="animals">
+    <h1>About the Indian Auroch</h1>
+    <p>
+      The Indian auroch, also known as <strong>Bos primigenius namadicus</strong>, was a powerful wild cattle species native to the Indian subcontinent.
+      Considered the ancestor of today’s domesticated zebu cattle, it sadly became extinct in the early 20th century due to human impact.
+    </p>
+
+    <h2>The Physical Appearance of the Indian Auroch</h2>
+    <p>
+      1. <strong>Size:</strong> 5 to 6.5 feet tall at the shoulder, weighing up to 1,500 kg.<br>
+      2. <strong>Build:</strong> Robust, muscular with deep chest and strong limbs.<br>
+      3. <strong>Horns:</strong> Long, curved horns spreading outward and slightly up.<br>
+      4. <strong>Coat:</strong> Dark brown to black; shaggy in winters.<br>
+      5. <strong>Shoulder Hump:</strong> Prominent and sturdy.<br>
+      6. <strong>White Rump:</strong> Distinctive patch visible on the rear.
+    </p>
+
+    <h3>Reasons for the Extinction of the Indian Auroch</h3>
+    <p>
+      1. <strong>Habitat Loss:</strong> Land converted for farming and urban use.<br>
+      2. <strong>Overhunting:</strong> Hunted for meat, hide, and horns.<br>
+      3. <strong>Competition:</strong> Outcompeted by domestic cattle.<br>
+      4. <strong>Disease:</strong> Caught infections from domesticated species.<br>
+      5. <strong>Genetic Isolation:</strong> Small populations led to weak genetic diversity.
+    </p>
+
+    <a href="https://en.wikipedia.org/wiki/Indian_aurochs" class="custom-link" target="_blank">Learn More on Wikipedia</a>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Indian Auroch Conservation Project | All Rights Reserved</p>
+  </div>
+
+</body>
+</html>

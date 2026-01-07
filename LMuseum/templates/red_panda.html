@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Red Panda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e8ecea;
+      color: rgb(46, 5, 94);
+      margin: 0;
+      font-size: 16px;
+      background-image: url('C:/Users/pavanjyothi/Desktop/2.png');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Header Styling */
+    .header {
+      background: linear-gradient(45deg, #09e61b4d, #098c60);
+      text-align: center;
+      padding: 40px;
+      color: white;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .scrolling-text-container {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .scrolling-text {
+      white-space: nowrap;
+      animation: scroll 10s linear infinite;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff3a3;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 15px 0;
+      text-decoration: underline;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #555;
+    }
+
+    /* Main Content Styling */
+    .animals {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .animals p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* 3D Model Embed */
+    .sketchfab-embed-wrapper {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Styling for Buttons */
+    .custom-link {
+      display: inline-block;
+      background-color: #09e61b;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .custom-link:hover {
+      background-color: #098c60;
+    }
+
+    /* Footer Styling */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .header {
+        padding: 20px;
+      }
+
+      .animals {
+        padding: 10px;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <div class="scrolling-text-container">
+      <div class="scrolling-text">🐾 Red Panda – The Cute Forest Dweller 🐾</div>
+    </div>
+    <h1>Red Panda</h1>
+    <p><b>Endangered Species of India</b></p>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="animals">
+    <h1>About the Red Panda</h1>
+    <p>The red panda (Ailurus fulgens), also known as the lesser panda or red bear-cat, is a small mammal native to the eastern Himalayas and southwestern China. It is not closely related to the giant panda. Red pandas are known for their distinctive red fur, long bushy tail, and a diet that primarily consists of bamboo, fruits, and insects. They are arboreal creatures, spending much of their time in trees, and are considered an endangered species due to habitat loss and poaching.</p>
+
+    <h2><b><u>The Physical Appearance of the Red Panda:</u></b></h2>
+    <p>1. <b>Fur:</b> Thick, reddish-brown fur on their upper parts helps them blend into their forested habitat.<br>
+       2. <b>Face:</b> Round face with white markings, including a white snout and patches around their eyes, giving them a masked appearance.<br>
+       3. <b>Tail:</b> Long, bushy tail ringed with alternating reddish-brown and cream-colored bands. It helps with balance and provides warmth.<br>
+       4. <b>Size:</b> Small in size, with a body length of 20-26 inches (50-65 cm) and a tail length of 12-20 inches (30-50 cm).<br>
+       5. <b>Paws:</b> Semi-retractable claws that help grip tree branches and fur-covered paws for insulation.<br>
+       6. <b>Ears:</b> Triangular-shaped ears with white fur inside.</p>
+
+    <h3><b><u>Why is the Red Panda Endangered?</u></b></h3>
+    <p>1. <b>Habitat Loss:</b> Deforestation, logging, and agricultural expansion have reduced their natural habitat.<br>
+       2. <b>Fragmentation of Habitat:</b> Remaining forests are fragmented, isolating red panda populations and affecting their genetic diversity.<br>
+       3. <b>Poaching:</b> Red pandas are illegally captured for trade in the exotic pet market, and their fur is used in traditional clothing.<br>
+       4. <b>Climate Change:</b> Climate change is altering the availability of bamboo and vegetation, impacting red panda habitats.<br>
+       5. <b>Human Activities:</b> Infrastructure development, mining, and road construction disrupt their habitats and lead to human-wildlife conflict.</p>
+
+    <!-- 3D Model Embed -->
+    <div class="sketchfab-embed-wrapper">
+      <iframe title="Red Panda" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/81007af39d6c4150b88f2abf4cc32a33/embed"></iframe>
+    </div>
+
+    <!-- Wikipedia Button -->
+    <a href="https://en.wikipedia.org/wiki/Red_panda" class="custom-link" target="_blank">Learn More on Wikipedia</a>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2025 Red Panda Conservation Project | All Rights Reserved</p>
+  </div>
+</body>
+</html>

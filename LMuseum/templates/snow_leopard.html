@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Snow Leopard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e8ecea;
+      color: rgb(46, 5, 94);
+      margin: 0;
+      font-size: 16px;
+      background-image: url('C:/Users/pavanjyothi/Desktop/2.png');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    /* Header Styling */
+    .header {
+      background: linear-gradient(45deg, #09e61b4d, #098c60);
+      text-align: center;
+      padding: 40px;
+      color: white;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+
+    .scrolling-text-container {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    .scrolling-text {
+      white-space: nowrap;
+      animation: scroll 10s linear infinite;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff3a3;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 15px 0;
+      text-decoration: underline;
+    }
+
+    h3 {
+      font-size: 20px;
+      color: #555;
+    }
+
+    /* Main Content Styling */
+    .animals {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+      text-align: left;
+    }
+
+    .animals p {
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* 3D Model Embed */
+    .sketchfab-embed-wrapper {
+      margin: 30px 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Styling for Buttons */
+    .custom-link {
+      display: inline-block;
+      background-color: #09e61b;
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .custom-link:hover {
+      background-color: #098c60;
+    }
+
+    /* Footer Styling */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Styles */
+    @media screen and (max-width: 768px) {
+      .header {
+        padding: 20px;
+      }
+
+      .animals {
+        padding: 10px;
+      }
+
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="scrolling-text-container">
+      <div class="scrolling-text">🐆 Snow Leopard – The Mountain Ghost 🐆</div>
+    </div>
+    <h1>Snow Leopard</h1>
+    <p><b>Endangered Animal of India</b></p>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="animals">
+    <h1>About the Snow Leopard</h1>
+    <p>The snow leopard is a large cat species native to the mountainous regions of Central and South Asia, including the Himalayas and the Tibetan Plateau. Snow leopards are known for their unique adaptations to the cold and rugged environments they inhabit. They are listed as a vulnerable species and face threats such as habitat loss, poaching, and retaliatory killings by herders due to livestock losses.</p>
+
+    <h2><b><u>The Physical Appearance of the Snow Leopard:</u></b></h2>
+    <p>1. <b>Coat:</b> Thick, fur-covered coat in pale gray or light cream with black rosettes and spots. This coloration helps them blend into snowy and rocky habitats.<br>
+       2. <b>Size:</b> Males weigh between 90 to 115 pounds (40 to 52 kilograms), females are slightly smaller.<br>
+       3. <b>Tail:</b> Long tail helps with balance and can be wrapped around them for warmth.<br>
+       4. <b>Habitat:</b> Found in high-altitude regions from 9,800 to 17,000 feet (3,000 to 5,200 meters).<br>
+       5. <b>Diet:</b> Their main diet consists of wild sheep and goats, though they also prey on smaller mammals, birds, and blue sheep.</p>
+
+    <h3><b><u>Why is the Snow Leopard Endangered?</u></b></h3>
+    <p>1. <b>Habitat Loss:</b> Increasing human activities like infrastructure development and agriculture put pressure on their natural habitat.<br>
+       2. <b>Poaching:</b> Poaching for fur and body parts contributes to their declining population.<br>
+       3. <b>Human-Wildlife Conflict:</b> Snow leopards sometimes prey on livestock, causing conflict with local herders.<br>
+       4. <b>Climate Change:</b> Altered weather patterns impact snow leopard habitats, affecting prey availability.<br>
+       5. <b>Lack of Research:</b> More research is needed to effectively monitor their populations and behavior.</p>
+
+    <!-- 3D Model Embed -->
+    <div class="sketchfab-embed-wrapper">
+      <iframe title="Snow Leopard" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/af9170c40d414857ad49906068cb4ce3/embed"></iframe>
+      <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;">
+        <a href="https://sketchfab.com/3d-models/snow-leopard-af9170c40d414857ad49906068cb4ce3?utm_medium=embed&utm_campaign=share-popup&utm_content=af9170c40d414857ad49906068cb4ce3" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a> <a href="https://sketchfab.com/Exmoorbeast?utm_medium=embed&utm_campaign=share-popup&utm_content=af9170c40d414857ad49906068cb4ce3" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a> <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=af9170c40d414857ad49906068cb4ce3" target="_blank" style="font-weight: bold; color: #1CAAD9;"></a>
+      </p>
+    </div>
+
+    <!-- Wikipedia Button -->
+    <a href="https://en.wikipedia.org/wiki/Snow_leopard" class="custom-link" target="_blank">Learn More on Wikipedia</a>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>&copy; 2025 Snow Leopard Conservation Project | All Rights Reserved</p>
+  </div>
+</body>
+</html>
